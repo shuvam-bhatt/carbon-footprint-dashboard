@@ -1,0 +1,4 @@
+name,excavation,transportation,equipmentUsage,energyConsumption,methaneEmission
+Place A,100,50,75,100,10
+Place B,150,60,80,120,15
+Place C,120,55,70,90,12
