@@ -1,46 +1,251 @@
-/* src/App.css */
-body {
-  font-family: Arial, sans-serif;
+/* App.css */
+.body,
+html {
+  font-family: "Playfair Display", system-ui;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient( to bottom right , rgb(252, 252, 252), rgb(228, 158, 248) );
-  
+  box-sizing: border-box;
+  background-image:url("bg.jpg") ;
+  padding-bottom: 60px;
+  background-size: 100% ;
 }
 
-.container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  color: #000000;
+.con {
+  background-color: #000000;
+  height: 100PX;
+  color: white;
   text-align: center;
 
 }
-
-.table-container {
-  margin-bottom: 40px;
+hr {
+  color: white;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", system-ui;
+  text-align: center;
+}
+
+p {
+  font-family: "Playfair Display", system-ui;
+
+}
+
+.foot {
+  color: rgb(40, 100, 219);
+  font-size: 18px;
+}
+
+.card {
+  color: rgb(40, 100, 219);
+  font-size: medium;
+}
+
+h3 {
+  font-family: "Playfair Display", system-ui;
+
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  height: 110px;
+  font-size: 20px;
+
+
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.lead {
+  font-family: "Playfair Display", system-ui;
+}
+
+.carbon {
+  font-size: 50px;
+  color: white;
+}
+
+nav {
+  /* padding: 10px; */
+  margin: 0;
+  /* font-weight: bold; */
+  font-family: "Playfair Display", system-ui;
+
+}
+
+a {
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: rgb(40, 100, 219);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: #555;
+  border: none;
+  font-size: 20px;
+  font-family: "Playfair Display", system-ui;
+}
+
+.additional-blocks {
+  text-align: justify;
+}
+
+.icon {
+  font-size: 50px;
+  color: white;
+  margin: 10px 450px 220px 20px;
+  font-weight: bold;
+}
+
+.navbar {
+  font-family: "Playfair Display", system-ui;
+
+
+}
+
+.navbar a:hover {
+  color: rgb(40, 100, 219);
+  transition: color 0.3s ease;
+
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+
+}
+
+/* Form Control Styles */
+.form-control {
+  margin-bottom: 20px;
+}
+
+/* Paper Container Styles */
+.paper-container {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Chart Container Styles */
 .chart-container {
-  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
-  
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+/* Individual Chart Styles */
 .chart {
-  flex: 1;
-  margin-right: 20px;
-  
+  flex: 1 1 500px;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.chart:last-child {
-  margin-right: 0;
+/* Container for additional blocks */
+.additional-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.text-field {
+/* Style for individual blocks */
+.block {
+  border: 1px solid #ddd;
+  /* Light grey border */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  padding: 20px;
+  background-color: #fff;
+  /* White background */
+  text-align: justify;
+  text-align: center;
+  font-family: "Playfair Display", system-ui;
+
+}
+
+
+/* Style for images inside blocks */
+.block-image {
+  width: 300px;
+  height: 250px;
+  border-radius: 8px;
+  /* Match the border radius of the block */
   margin-bottom: 10px;
 }
 
+.block2 {
+  text-align: center;
+}
+
+iframe {
+  padding: 1%;
+}
+
+.container > h1 {
+  color: black;
+  font-family: "Playfair Display", system-ui;
+  overflow: hidden;
+  border-right: .15em solid  rgb(40, 100, 219);;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end 3.5s;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  100% { border-color: rgb(40, 100, 219); }
+}
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+  }
+}
